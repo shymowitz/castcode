@@ -1,0 +1,27 @@
+
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>Index</th>
+        <th>Number</th>
+        <th>Data</th>
+        <th>Plan</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let line of customer.lines; let i=index'>
+      <td>
+        {{i+1}}
+      </td>
+      <td>
+        {{line.number}}
+      </td>
+      <td>
+        {{line.plan}}
+      </td>
+      <td>
+        {{line.data}}
+      </td>
+    </tr>
+  </tbody>
+  </table>

@@ -1,0 +1,40 @@
+<!--actually show information of customer-->
+<div class="bg-color-blue add-radius my-text-left add-padding">
+    <div class="row">
+        <div class="col-xs-2 col-sm-2 col-md-1">
+            <div class="box">
+                <strong>Name:</strong>
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-5">
+            <div class="box">
+                {{customer.firstName}} {{customer.lastName}}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-2 col-sm-2 col-md-1">
+            <div class="box">
+                <strong>Address:</strong>
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-5">
+            <div class="box">
+                {{customer.addressOne}} {{customer.addressTwo}}, {{customer.city}} {{customer.state}} {{customer.zip}}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-2 col-sm-2 col-md-1">
+            <div class="box">
+                <strong>Phone:</strong>
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-5">
+            <div class="box">
+                {{customer.phone}}
+            </div>
+        </div>
+    </div>
+
+</div>

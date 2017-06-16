@@ -1,0 +1,15 @@
+<header>
+  <nav>
+    <a [routerLink]="['']">Home</a>
+    <a [routerLink]="['MockDataComponent']">Mock Data</a>
+  </nav>
+</header>
+<main>
+  <h1>Hello from {{api.title}}!</h1>
+
+  <!-- Images (and assets) are parsed and loaded from within the public directory -->
+  <router-outlet></router-outlet>
+</main>
+<footer>
+  <a>&copy; 2016 {{api.title}}</a>
+</footer>

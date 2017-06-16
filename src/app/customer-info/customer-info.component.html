@@ -1,0 +1,6 @@
+<!--pass inputs to customer-show component, because this container holds data -->
+
+<span *ngFor="let customer of mocks">
+    <my-customer-show [customer]="customer"></my-customer-show>
+    <my-customer-lines [customer]="customer"></my-customer-lines>
+</span>
